@@ -1,0 +1,23 @@
+{
+  "name": "cf-pages-vite-vue-app",
+  "version": "0.1.0",
+  "private": true,
+  "description": "CF Pages + Vite + Vue App",
+  "author": "Brett Jankord",
+  "license": "MIT",
+  "scripts": {
+    "dev": "wrangler --proxy=5173 --compatibility-date=2024-02-01 pages dev --live-reload -- npm run vite:dev",
+    "vite:dev": "vite --port=5173",
+    "vite:build": "vite build",
+    "prepreview": "npm run vite:build",
+    "preview": "wrangler --compatibility-date=2024-02-01 pages dev dist --live-reload"
+  },
+  "dependencies": {
+    "vue": "^3.4.15"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.3",
+    "vite": "^5.0.12",
+    "wrangler": "^3.26.0"
+  }
+}
