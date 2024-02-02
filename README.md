@@ -1,5 +1,7 @@
 # cf-pages-vite-vue-app
-A CF Pages + Vite + Vue App Example
+A CF Pages + Vite + Vue App
+
+Demo: [https://cf-pages-vite-vue-app.pages.dev/](https://cf-pages-vite-vue-app.pages.dev/)
 
 ## NPM Scripts
 
