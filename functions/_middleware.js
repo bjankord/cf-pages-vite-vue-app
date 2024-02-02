@@ -14,7 +14,8 @@ const handleHtmlTemplate = async (context) => {
 
   // If the response is HTML, it can be transformed with
   // HTMLRewriter -- otherwise, it should pass through
-  if (response.headers && !response.headers.get("content-type").startsWith("text/html")) return response;
+  const responseContentType = response?.headers && response.headers.get("content-type");
+  if (responseContentType && !responseContentType.startsWith("text/html")) return response;
 
   class ElementHandler {
     element(element) {
