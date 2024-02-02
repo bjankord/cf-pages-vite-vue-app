@@ -12,7 +12,7 @@ const stringifiedBootstrapData = JSON.stringify(bootstrapData);
 </script>
 
 <template>
-  <h1>{{ msg }} World</h1>
+  <h1>{{ msg }}</h1>
   <h2>Bootstrap data</h2>
   <p>{{ stringifiedBootstrapData }}</p>
 
