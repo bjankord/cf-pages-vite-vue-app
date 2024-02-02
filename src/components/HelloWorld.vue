@@ -6,10 +6,15 @@ defineProps({
 })
 
 const count = ref(0)
+
+const bootstrapData = window.bootstrap;
+const stringifiedBootstrapData = JSON.stringify(bootstrapData);
 </script>
 
 <template>
   <h1>{{ msg }} World</h1>
+  <h2>Bootstrap data</h2>
+  <p>{{ stringifiedBootstrapData }}</p>
 
   <div class="card">
     <button type="button" @click="count++">count is {{ count }}</button>
